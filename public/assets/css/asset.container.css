@@ -1,0 +1,62 @@
+/*
+ *    Custom containers
+ */
+
+.container {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container.container--fluid {
+    max-width: 100% !important;
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .container.container--540 {
+        max-width: 540px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .container.container--720 {
+        max-width: 720px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .container.container--960 {
+        max-width: 960px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .container.container--1140 {
+        max-width: 1140px !important;
+    }
+}
+
+@media only screen and (min-width: 1460px) {
+    .container.container--1400 {
+        max-width: 1400px !important;
+    }
+}

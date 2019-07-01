@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+}
+
+#intro {
+    display: block;
+    width: 100%;
+}
+
+#intro img {
+    max-width: 100%;
+}

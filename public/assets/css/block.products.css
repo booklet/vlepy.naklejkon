@@ -1,0 +1,117 @@
+#products {
+    padding: 20px 0px 0px 0px;
+}
+
+#products .products__title {
+    display: block;
+    position: relative;
+    font-size: 42px;
+    font-family: 'Roboto Light';
+    text-align: center;
+    font-weight: 300;
+    margin: 0px;
+    padding: 14px 0px 17px 0px;
+}
+
+#products .products__title::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 100px;
+    content: '';
+    border-bottom: 1px solid #000000;
+    transform: translateX(-50%);
+}
+
+#products .products__info {
+    font-family: 'Roboto Light';
+    text-align: center;
+    line-height: 34px;
+    padding: 20px 0px 40px 0px;
+}
+
+#products .product {
+    display: flex;
+    background-color: #ffffff;
+    font-family: 'Roboto Light';
+    box-shadow: 0px 2px 5px 0px rgba(204, 204, 204, 1);
+    padding: 10px;
+    border: 1px solid #cecece;
+    transition: border 0.2s;
+}
+
+#products .product:hover {
+    border: 1px solid #1c863e;
+}
+
+#products .product.product--premium:hover {
+    border: 1px solid #9e7f3e;
+}
+
+#products .product .product__image {
+    font-size: 0px;
+    padding-right: 0px;
+}
+
+#products .product .product__image img {
+    max-width: 100%;
+}
+
+#products .product .product__info {
+    display: flex;
+    flex-direction: column;
+}
+
+#products .product .product__info .product__name {
+    flex: 0 0 auto;
+    font-size: 36px;
+    color: #0f7f31;
+    margin: 20px 0px;
+}
+
+#products .product.product--premium .product__info .product__name {
+    color: #9e7f3e;
+}
+
+#products .product .product__info .product__description {
+    flex: 1 1 auto;
+}
+
+#products .product .product__info .product__actions {
+    flex: 0 0 auto;
+}
+
+#products .product .product__info .product__more {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #0f7f31;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#products .product .product__info .product__more:hover {
+    color: #0b5b23;
+}
+
+#products .product .product__info .product__buy {
+    display: inline-block;
+    background-color: #0f7f31;
+    font-size: 16px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    float: right;
+    color: #ffffff;
+    margin: 0px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#products .product .product__info .product__buy:hover {
+    background-color: #0b5b23;
+}
