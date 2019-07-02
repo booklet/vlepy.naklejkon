@@ -1,9 +1,9 @@
-<header id="header" class="">
-    <div class="container">
+<header id="header">
+    <div class="container container--1200">
         <div class="header-wrapper">
             <div class="brand">
                 <a class="brand__logo" href="#">
-                    <img src="/public/assets/images/logo.png" alt="" />
+                    <img src="/public/assets/images/naklejkon_logo.svg" alt="" />
                 </a>
                 <div class="brand__text">
                     Producent vlepek

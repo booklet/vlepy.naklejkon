@@ -1,0 +1,51 @@
+#newsletter {
+    text-align: center;
+    padding: 4px 0px 1px 0px;
+}
+
+#newsletter .newsletter__title {
+    font-family: 'Roboto SemiBold';
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+#newsletter .newsletter__subtitle {
+    font-family: 'Roboto Light';
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+
+#newsletter .newsletter__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter .newsletter__email {
+    display: block;
+    flex: 1 1 auto;
+    max-width: 324px;
+    height: 50px;
+    font-size: 16px;
+    margin-right: 14px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#newsletter .newsletter__btn {
+    display: block;
+    background-color: #538fff;
+    flex: 0 0 120px;
+    height: 50px;
+    font-family: 'Roboto SemiBold';
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0px;
+    border: none;
+    border-radius: 10px;
+}

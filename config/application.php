@@ -11,6 +11,11 @@ Config::set('css_files', [
     //
     'fonts.css',
 
+    // Plugins
+    'plugin.slick.css',
+    'plugin.slick.theme.css',
+    'fontawesome.min.css',
+
     // Assets
     'asset.container.css',
     'asset.flexbox.css',
@@ -18,13 +23,24 @@ Config::set('css_files', [
     //
     'application.css',
 
+    // Layout
+    'layout.header.css',
+    'layout.footer.css',
+
     //
-    'block.header.css',
     'block.products.css',
+    'block.reviews.css',
+    'block.insta-gallery.css',
+    'block.advanteges.css',
+    'block.newsletter.css',
 ]);
 
 Config::set('js_files', [
+    //
+    'jquery.min.js',
+
     // Plugins
+    'slick.min.js',
     'instashow/elfsight-instagram-feed.js',
 
     //

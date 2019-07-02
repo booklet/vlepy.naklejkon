@@ -6,7 +6,6 @@
     display: block;
     position: relative;
     font-size: 42px;
-    font-family: 'Roboto Light';
     text-align: center;
     font-weight: 300;
     margin: 0px;
@@ -25,18 +24,14 @@
 }
 
 #products .products__info {
-    font-family: 'Roboto Light';
     text-align: center;
     line-height: 34px;
-    padding: 20px 0px 40px 0px;
+    padding: 0px 0px 50px 0px;
 }
 
 #products .product {
     display: flex;
-    background-color: #ffffff;
-    font-family: 'Roboto Light';
-    box-shadow: 0px 2px 5px 0px rgba(204, 204, 204, 1);
-    padding: 10px;
+    margin-bottom: 25px;
     border: 1px solid #cecece;
     transition: border 0.2s;
 }
@@ -67,7 +62,7 @@
     flex: 0 0 auto;
     font-size: 36px;
     color: #0f7f31;
-    margin: 20px 0px;
+    margin: 5px 0px 15px 0px;
 }
 
 #products .product.product--premium .product__info .product__name {
@@ -76,6 +71,7 @@
 
 #products .product .product__info .product__description {
     flex: 1 1 auto;
+    line-height: 1.6em;
 }
 
 #products .product .product__info .product__actions {
@@ -94,8 +90,16 @@
     transition: color 0.2s;
 }
 
+#products .product.product--premium .product__info .product__more {
+    color: #9e7f3e;
+}
+
 #products .product .product__info .product__more:hover {
     color: #0b5b23;
+}
+
+#products .product.product--premium .product__info .product__more:hover {
+    color: #816832;
 }
 
 #products .product .product__info .product__buy {
@@ -112,6 +116,14 @@
     transition: background-color 0.2s;
 }
 
+#products .product.product--premium .product__info .product__buy {
+    background-color: #9e7f3e;
+}
+
 #products .product .product__info .product__buy:hover {
     background-color: #0b5b23;
+}
+
+#products .product.product--premium .product__info .product__buy:hover {
+    background-color: #816832;
 }

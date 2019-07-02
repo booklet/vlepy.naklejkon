@@ -1,0 +1,30 @@
+#insta-gallery {
+    padding: 45px 0px 0px 0px;
+}
+
+#insta-gallery .insta-gallery__hashtags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 40px 0px;
+}
+
+#insta-gallery .insta-gallery__hashtags li {
+
+}
+
+#insta-gallery .insta-gallery__hashtags li::after {
+    display: inline-block;
+    content: '|';
+    margin: 0px 13px;
+}
+
+#insta-gallery .insta-gallery__hashtags li:last-child::after {
+    display: none;
+}
+
+#insta-gallery .gallery-wrapper {
+    padding: 0px;
+}

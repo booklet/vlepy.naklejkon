@@ -55,6 +55,12 @@
     }
 }
 
+@media only screen and (min-width: 1260px) {
+    .container.container--1200 {
+        max-width: 1200px !important;
+    }
+}
+
 @media only screen and (min-width: 1460px) {
     .container.container--1400 {
         max-width: 1400px !important;

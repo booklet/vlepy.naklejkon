@@ -4,7 +4,7 @@
 
 body {
     background-color: #f0f0f0;
-    font-family: 'Roboto';
+    font-family: 'Roboto Light';
     font-size: 14px;
     font-weight: 300;
     color: #444444;
@@ -20,4 +20,40 @@ body {
 
 #intro img {
     max-width: 100%;
+}
+
+.title {
+    display: block;
+    position: relative;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0px 0px 20px 0px;
+    padding: 14px 0px 17px 0px;
+}
+
+.title.title--small {
+    font-size: 30px;
+}
+
+.title.title--underscore::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 100px;
+    content: '';
+    border-bottom: 1px solid #666666;
+    transform: translateX(-50%);
+}
+
+.title b {
+    font-family: 'Roboto Bold';
+    font-weight: 300;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px #cccccc;
+    padding: 10px;
 }

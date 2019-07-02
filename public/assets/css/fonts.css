@@ -61,3 +61,19 @@
     font-family: "Roboto ThinItalic";
     src: url(/public/assets/fonts/Roboto/Roboto-ThinItalic.ttf) format("truetype");
 }
+
+
+/*
+ *    Slick
+ */
+
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url(/public/assets/fonts/Slick/slick.eot);
+    src: url(/public/assets/fonts/Slick/slick.eot?#iefix) format('embedded-opentype'),
+         url(/public/assets/fonts/Slick/slick.woff) format('woff'),
+         url(/public/assets/fonts/Slick/slick.ttf) format('truetype'),
+         url(/public/assets/fonts/Slick/slick.svg#slick) format('svg');
+}
