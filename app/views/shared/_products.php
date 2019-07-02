@@ -1,4 +1,5 @@
 <div id="products">
+    <a class="anchor" name="vlepki"></a>
     <h3 class="title title--underscore">Vlepy klasyczne i premium</h3>
     <div class="products__info">
         Vlepa czyli mała, samoprzylepna forma, kiedyś tworzona z myślą o

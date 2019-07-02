@@ -1,4 +1,5 @@
 <div id="newsletter">
+    <a class="anchor" name="newsletter"></a>
     <div class="newsletter__title">
         Newsletter
     </div>

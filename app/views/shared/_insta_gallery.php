@@ -1,4 +1,5 @@
 <div id="insta-gallery">
+    <a class="anchor" name="galeria"></a>
     <h3 class="title title--underscore">Galeria vlepek</h3>
     <ul class="insta-gallery__hashtags">
         <li>#vlepy_pl</li>
