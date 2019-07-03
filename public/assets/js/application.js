@@ -1,4 +1,8 @@
 (function($) {
+    // Custom validator methods
+    $.validator.addMethod('zipCode', function(v, el) { return v.match(/^[0-9]{2}\-[0-9]{3}$/); }, 'Wprowadź kod w formacie nn-nnn.');
+    $.validator.addMethod('phoneNumber', function(v, el) { return v.match(/^(\+48)?\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{3}$/); }, 'Prosze wpisać poprawny numer telefonu (9 cyfr).');
+
     $.fn.elemExists = function(callback = null) {
         if ($(this).length) {
             if (callback && typeof callback == 'function') {
@@ -154,6 +158,45 @@
             $self.on('submit', function(e) {
                 if (productsNumber() == 0) {
                     return false;
+                }
+            });
+        });
+
+        $('#order').elemExists(function() {
+            var $self = this;
+            var $submit_btn = $('#order button[type=submit]');
+
+            $.validator.setDefaults({ ignore: [] });
+
+            $self.validate({
+                lang: 'pl',
+                validClass: 'valid',
+                errorClass: 'invalid',
+                errorPlacement: function(er, el) {
+                    el.closest('.form-group').append(er);
+                },
+            });
+
+            $('#order .order__phone-number').rules('add', {
+                phoneNumber: true,
+                messages: {
+                    phoneNumber: 'Proszę wpisywać poprawny numer telefonu.'
+                }
+            });
+
+            $('#order .order__zip-code').rules('add', {
+                zipCode: true,
+                messages: {
+                    zipCode: 'Proszę podać poprawny kod pocztowy'
+                }
+            });
+
+            $('#order .product input[type=file]').on('change', function() {
+                let id = $(this).attr('id');
+                let file = this.files[0] || null;
+
+                if (file) {
+                    $(this).next('label[for=' + id + ']').html(file.name);
                 }
             });
         });

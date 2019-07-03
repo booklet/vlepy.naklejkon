@@ -36,6 +36,9 @@ Config::set('css_files', [
     'layout.header.css',
     'layout.footer.css',
 
+    // Pages
+    'page.order.new.css',
+
     //
     'block.products.css',
     'block.reviews.css',
@@ -52,6 +55,9 @@ Config::set('js_files', [
     // Plugins
     'slick.min.js',
     'instashow/elfsight-instagram-feed.js',
+    'validator/dist/jquery.validate.min.js',
+    'validator/dist/additional-methods.min.js',
+    'validator/src/localization/messages_pl.js',
 
     //
     'application.js',
