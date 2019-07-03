@@ -72,39 +72,33 @@
 }
 
 #new-order .new-order__available-sizes {
+    margin: 45px auto 45px auto;
+}
+
+#new-order .new-order__available-sizes ul {
     display: block;
     background-color: #ffffff;
-    width: 540px;
+    list-style-type: none;
     line-height: 1.4em;
     font-family: 'Roboto';
     font-size: 14px;
-    text-align: center;
     color: #282828;
-    margin: 45px auto 45px auto;
+    margin: 0px;
     padding: 15px 25px;
     border: 1px solid #c8d3dd;
     border-radius: 5px;
 }
 
-#new-order .new-order__available-sizes table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-#new-order .new-order__available-sizes tr {
-
-}
-
-#new-order .new-order__available-sizes tr td {
-    padding: 10px;
+#new-order .new-order__available-sizes ul li {
+    padding: 6px 0px;
     border-bottom: 1px solid #c8d3dd;
 }
 
-#new-order .new-order__available-sizes tr:last-child td {
+#new-order .new-order__available-sizes ul li:last-child {
     border-bottom: none;
 }
 
-#new-order .new-order__available-sizes tr td span {
+#new-order .new-order__available-sizes ul li span {
     font-family: 'Roboto SemiBold';
+    float: right;
 }

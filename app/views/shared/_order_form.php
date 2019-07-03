@@ -1,44 +1,37 @@
 <form id="new-order" class="form" action="<?= Routing::path('order_new') ?>" method="POST">
+    <a class="anchor" name="vlepki"></a>
     <div class="container container--720">
-        <h3 class="title title--underscore">Zamów vlepki</h3>
+        <h3 class="title title--underscore">Cennik vlepek</h3>
         <?php Alerts::display(); ?>
         <div class="new-order__available-sizes">
-
-            <table class="" width="">
-                <tr>
-                    <td>50x50 mm <span>(33,00 zł)</span></td>
-                    <td>70x50 mm <span>(38,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>70x70 mm <span>(45,00 zł)</span></td>
-                    <td>70x100 mm <span>(56,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>100x100 mm <span>(76,00 zł)</span></td>
-                    <td>70x150 mm <span>(76,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>120x120 mm <span>(138,00 zł)</span></td>
-                    <td>70x200 mm <span>(107,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>150x150 mm <span>(138,00 zł)</span></td>
-                    <td>100x150 mm <span>(97,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>50x100 mm <span>(45,00 zł)</span></td>
-                    <td>100x200 mm <span>(138,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>50x150 mm <span>(62,00 zł)</span></td>
-                    <td>A6 (105x148 mm) <span>(107,00 zł)</span></td>
-                </tr>
-                <tr>
-                    <td>50x200 mm <span>(88,00 zł)</span></td>
-                    <td>A5 (148x210 mm) <span>(199,00 zł)</span></td>
-                </tr>
-            </table>
+            <div class="flexbox flexbox--grid">
+                <div class="col col--6">
+                    <ul>
+                        <li class="size">50x50 mm <span>33,00 zł</span></li>
+                        <li class="size">70x70 mm <span>45,00 zł</span></li>
+                        <li class="size">100x100 mm <span>76,00 zł</span></li>
+                        <li class="size">120x120 mm <span>138,00 zł</span></li>
+                        <li class="size">150x150 mm <span>138,00 zł</span></li>
+                        <li class="size">50x100 mm <span>45,00 zł</span></li>
+                        <li class="size">50x150 mm <span>62,00 zł</span></li>
+                        <li class="size">50x200 mm <span>88,00 zł</span></li>
+                    </ul>
+                </div>
+                <div class="col col--6">
+                    <ul>
+                        <li class="size">70x50 mm <span>38,00 zł</span></li>
+                        <li class="size">70x100 mm <span>56,00 zł</span></li>
+                        <li class="size">70x150 mm <span>76,00 zł</span></li>
+                        <li class="size">70x200 mm <span>107,00 zł</span></li>
+                        <li class="size">100x150 mm <span>97,00 zł</span></li>
+                        <li class="size">100x200 mm <span>138,00 zł</span></li>
+                        <li class="size">A6 (105x148 mm) <span>107,00 zł</span></li>
+                        <li class="size">A5 (148x210 mm) <span>199,00 zł</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <h3 class="title title--underscore">Zamów vlepki</h3>
         <div class="new-order__add-product">
             <div class="flexbox flexbox--grid flexbox--justify-center flexbox--align-center">
                 <div class="col col--25p">
