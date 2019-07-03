@@ -1,0 +1,30 @@
+.alert {
+    display: block;
+    background-color: #f3f1f2;
+    font-family: 'Roboto SemiBold';
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #818181;
+    margin-bottom: 15px;
+    padding: 25px;
+    border: 2px solid #cecece;
+    border-radius: 10px;
+}
+
+.alert.alert--info {
+    background-color: #e6f2ff;
+    color: #3399ff;
+    border-color: #99ccff;
+}
+
+.alert.alert--success {
+    background-color: #f8fbef;
+    color: #53be31;
+    border-color: #acd037;
+}
+
+.alert.alert--error {
+    background-color: #ffe6e6;
+    color: #d80e24;
+    border-color: #ff8080;
+}

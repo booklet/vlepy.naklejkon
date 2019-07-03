@@ -1,6 +1,7 @@
 <form id="new-order" class="form" action="<?= Routing::path('order_new') ?>" method="POST">
     <div class="container container--720">
         <h3 class="title title--underscore">Zamów vlepki</h3>
+        <?php Alerts::display(); ?>
         <div class="new-order__add-product">
             <div class="flexbox flexbox--grid flexbox--justify-center flexbox--align-center">
                 <div class="col col--25p">

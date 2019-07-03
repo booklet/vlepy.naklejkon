@@ -13,6 +13,17 @@ Config::set('mysqltime', "Y-m-d H:i:s");
 
 Config::set('package_size', 500);
 
+Config::set('shipping_name', 'Kurier UPS');
+Config::set('shipping_price', 15.00);
+
+
+/* Mailing */
+Config::set('mailing_address', 'info@booklet.pl');
+Config::set('mailing_from_name', 'Vlepy.naklejkon.pl');
+Config::set('mailing_from_email', 'info@booklet.pl');
+Config::set('mailing_reply_to', 'info@booklet.pl');
+
+
 // List of files to minify
 Config::set('css_files', [
     //
@@ -28,6 +39,7 @@ Config::set('css_files', [
     'asset.flexbox.css',
     'asset.form.css',
     'asset.buttons.css',
+    'asset.alerts.css',
 
     //
     'application.css',

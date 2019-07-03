@@ -12,9 +12,11 @@ try {
     // =========================================================================
     require_once 'config/routing.php';
 
-    // Addons
+    //
     // =========================================================================
     require_once 'lib/helpers.php';
+
+    session_start();
 
     if (!$match) {
         echo Response::raiseError(404, ['Resource not found.']);
