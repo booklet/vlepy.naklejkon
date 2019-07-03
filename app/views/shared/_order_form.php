@@ -2,6 +2,43 @@
     <div class="container container--720">
         <h3 class="title title--underscore">Zamów vlepki</h3>
         <?php Alerts::display(); ?>
+        <div class="new-order__available-sizes">
+
+            <table class="" width="">
+                <tr>
+                    <td>50x50 mm <span>(33,00 zł)</span></td>
+                    <td>70x50 mm <span>(38,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>70x70 mm <span>(45,00 zł)</span></td>
+                    <td>70x100 mm <span>(56,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>100x100 mm <span>(76,00 zł)</span></td>
+                    <td>70x150 mm <span>(76,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>120x120 mm <span>(138,00 zł)</span></td>
+                    <td>70x200 mm <span>(107,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>150x150 mm <span>(138,00 zł)</span></td>
+                    <td>100x150 mm <span>(97,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>50x100 mm <span>(45,00 zł)</span></td>
+                    <td>100x200 mm <span>(138,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>50x150 mm <span>(62,00 zł)</span></td>
+                    <td>A6 (105x148 mm) <span>(107,00 zł)</span></td>
+                </tr>
+                <tr>
+                    <td>50x200 mm <span>(88,00 zł)</span></td>
+                    <td>A5 (148x210 mm) <span>(199,00 zł)</span></td>
+                </tr>
+            </table>
+        </div>
         <div class="new-order__add-product">
             <div class="flexbox flexbox--grid flexbox--justify-center flexbox--align-center">
                 <div class="col col--25p">

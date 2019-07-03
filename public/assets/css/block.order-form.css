@@ -70,3 +70,41 @@
     width: 240px;
     margin-top: 45px;
 }
+
+#new-order .new-order__available-sizes {
+    display: block;
+    background-color: #ffffff;
+    width: 540px;
+    line-height: 1.4em;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-align: center;
+    color: #282828;
+    margin: 45px auto 45px auto;
+    padding: 15px 25px;
+    border: 1px solid #c8d3dd;
+    border-radius: 5px;
+}
+
+#new-order .new-order__available-sizes table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#new-order .new-order__available-sizes tr {
+
+}
+
+#new-order .new-order__available-sizes tr td {
+    padding: 10px;
+    border-bottom: 1px solid #c8d3dd;
+}
+
+#new-order .new-order__available-sizes tr:last-child td {
+    border-bottom: none;
+}
+
+#new-order .new-order__available-sizes tr td span {
+    font-family: 'Roboto SemiBold';
+}
