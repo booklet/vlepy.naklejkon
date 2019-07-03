@@ -1,0 +1,380 @@
+/*
+ *    Forms
+ */
+
+.form {
+    display: block !important;
+}
+
+.form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form .form-group > label {
+    background-color: transparent;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    line-height: 18px;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 300;
+    color: #7b8a94;
+}
+
+.form .form-group > label > i.fa {
+    font-size: 1.4em;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.form .form-group .form-control {
+    display: block;
+    background-color: #ffffff !important;
+    width: 100%;
+    height: auto;
+    line-height: 1.4em;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #282828;
+    padding: 25px 12px 8px 12px;
+    border: 1px solid #c8d3dd;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: color 0.2s border 0.2s;
+}
+
+.form .form-group div.form-control {
+    color: #b3b1b2;
+    overflow: auto;
+    -moz-appearance: textfield;
+}
+
+.form .form-group .form-control:focus {
+    border-color: #0070ba;
+    box-shadow: none;
+}
+
+.form .form-group .form-control.valid {
+    /*border-color: #53be31;*/
+}
+
+.form .form-group .form-control.invalid {
+    border-color: #d80e24;
+    box-shadow: none;
+}
+
+
+/* Remove IOS shadow on top of input */
+.form .form-group input[type=text].form-control,
+.form .form-group input[type=email].form-control,
+.form .form-group input[type=number].form-control,
+.form .form-group textarea.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form .form-group input[type=number].form-control.remove-arrows {
+    -moz-appearance: textfield;
+}
+
+.form .form-group textarea.form-control {
+    height: auto;
+    min-height: 67px;
+    padding: 28px 14px 10px 14px;
+    resize: vertical;
+}
+
+.form .form-group textarea.form-control.autoresize {
+    height: 67px;
+}
+
+.form .form-group select.form-control {
+    background: url('/public/assets/images/arrow_down_gray_24x24.png') no-repeat scroll calc(100% - 6px) 28px #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 26px 30px 7px 6px;
+    cursor: pointer;
+}
+
+.form .col-form-label {
+    display: block;
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.form .form-group label.invalid,
+.form .form-group div.invalid {
+    display: block;
+    position: static;
+    color: #d80e24;
+    margin-top: 6px;
+}
+
+.form .submit {
+    display: block;
+    background-color: #bf0018;
+    width: 100%;
+    font-family: 'Roboto SemiBold';
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 36px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 576px) {
+    .form .submit {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+/*
+ *    Inline form group
+ */
+
+.form .form-group.form-group--inline {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+
+.form .form-group.form-group--inline > label {
+    position: static;
+    top: auto;
+    left: auto;
+    flex: 0 0 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #282828;
+    padding: 6px 0px;
+}
+
+.form .form-group.form-group--inline .form-control {
+    flex: 0 0 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.form .form-group.form-group--inline select.form-control {
+    background: url('/public/assets/images/arrow_down_gray_24x24.png') no-repeat scroll calc(100% - 6px) 9px #fff;
+    padding: 8px 30px 8px 10px;
+}
+
+@media only screen and (min-width: 576px) {
+    .form .form-group.form-group--inline > label,
+    .form .form-group.form-group--inline .form-control {
+        flex: 0 0 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form - default */
+.form .form-group .length-counter {
+    position: absolute;
+    top: 11px;
+    right: 14px;
+    font-family: 'Roboto SemiBold';
+    font-size: 12px;
+    color: #b3b1b2;
+}
+
+.form .form-group .prefix {
+    position: absolute;
+    top: 28px;
+    left: 12px;
+    line-height: 1.15em;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #b3b1b2;
+}
+
+.form .form-group .prefix + .form-control {
+    padding-left: 48px;
+}
+
+.form .form-group .unit {
+    position: absolute;
+    top: 38px;
+    right: 14px;
+    font-family: 'Roboto SemiBold';
+    font-size: 14px;
+    color: #b3b1b2;
+}
+
+.form .form-group .unit + .form-control {
+    padding-right: 36px;
+}
+
+
+.form .form-group.radio-select {
+    display: block;
+    background-color: #ffffff !important;
+    position: relative;
+    width: 100%;
+    height: 67px;
+    line-height: 1.15;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #524d63;
+    padding: 29px 14px 11px 14px;
+    border: 2px solid #cbd5df;
+    border-radius: 5px;
+    box-shadow: none;
+    overflow: hidden;
+    transition: color 0.2s border 0.2s;
+}
+
+.form .form-group.radio-select .select-list {
+    display: block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form .form-group.radio-select .select-list input[type=radio],
+.form .form-group.radio-select .select-list label {
+    display: none;
+}
+
+.form .form-group.radio-select .select-list input[type=radio]:checked + label {
+    display: block;
+}
+
+.form .form-group.radio-select.active {
+    overflow: visible;
+}
+
+.form .form-group.radio-select.active .select-list  {
+    background: #ffffff;
+    position: absolute;
+    top: 29px;
+    left: -2px;
+    z-index: 2;
+    width: calc(100% + 4px);
+    max-height: 200px;
+    padding: 0px;
+    border-top: none;
+    border-right: 2px solid #cbd5df;
+    border-bottom: 2px solid #cbd5df;
+    border-left: 2px solid #cbd5df;
+    border-radius: 0px 0px 5px 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.form .form-group.radio-select.active .select-list label {
+    display: block;
+    font-size: 14px;
+    margin: 0px;
+    padding: 6px 15px;
+}
+
+
+
+
+
+
+
+
+/* Smaller version of default inputs */
+.form .form-group.form-group--small > label {
+    top: 6px;
+    left: 15px;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.form .form-group.form-group--small > label > i.fa {
+    font-size: 1.4em;
+}
+
+.form .form-group.form-group--small .form-control {
+    line-height: 1.2;
+    font-size: 14px;
+    padding: 24px 14px 6px 14px;
+    border: 1px solid #cbd5df;
+    border-radius: 3px;
+}
+
+.form .form-group.form-group--small textarea.form-control {
+    min-height: 49px;
+    padding: 20px 14px 6px 14px;
+}
+
+.form .form-group.form-group--small textarea.form-control.autoresize {
+    height: 49px;
+}
+
+.form .form-group.form-group--small select.form-control {
+    background: url("/public/assets/images/arrow_down_gray_18x18.png") no-repeat scroll 29px 7px #fff;
+    padding: 22px 30px 6px 10px;
+}
+
+.form .form-group.form-group--small .length-counter {
+    top: 6px;
+    right: 15px;
+    font-size: 11px;
+}
+
+.form .form-group.form-group--small .prefix {
+    left: 14px;
+    top: 26px;
+    font-size: 14px;
+}
+
+.form .form-group.form-group--small .prefix + .form-control {
+    padding-left: 44px;
+}
+
+.form .form-group.form-group--small .unit {
+    top: 24px;
+    right: 14px;
+    line-height: 1.15;
+    font-size: 12px;
+}
+
+.form .form-group.form-group--small .unit + .form-control {
+    padding-right: 32px;
+}
+
+.form .form-group.form-group--small.radio-select {
+    height: 49px;
+    line-height: 1.2;
+    font-size: 14px;
+    padding: 24px 14px 6px 14px;
+    border: 1px solid #cbd5df;
+    border-radius: 3px;
+}
+
+.form .form-group.form-group--small.radio-select.active .select-list  {
+    left: -1px;
+    width: calc(100% + 2px);
+    border-right: 1px solid #cbd5df;
+    border-bottom: 1px solid #cbd5df;
+    border-left: 1px solid #cbd5df;
+}

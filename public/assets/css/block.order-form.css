@@ -1,0 +1,72 @@
+#new-order {
+    padding: 30px 0px 30px 0px;
+}
+
+#new-order .new-order__add-product {
+    margin-bottom: 25px;
+}
+
+#new-order .new-order__products {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#new-order .new-order__products .product {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    font-family: 'Roboto SemiBold';
+    margin-bottom: 15px;
+    padding: 15px 25px;
+    border: 1px solid #c8d3dd;
+    border-radius: 5px;
+}
+
+#new-order .new-order__products .product .product__name {
+    flex: 1 1 auto;
+}
+
+#new-order .new-order__products .product .product__quantity {
+    flex: 0 0 15%;
+}
+
+#new-order .new-order__products .product .product__price {
+    flex: 0 0 15%;
+    color: #53be31;
+}
+
+#new-order .new-order__products .product .product__remove {
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#new-order .new-order__products .product .product__remove:hover {
+    color: #d80e24;
+}
+
+#new-order .new-order__products .product .product__remove::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f1f8';
+}
+
+#new-order .new-order__summary {
+    text-align: right;
+}
+
+#new-order .new-order__summary .total-price {
+    font-family: 'Roboto SemiBold';
+    font-size: 18px;
+}
+
+#new-order .new-order__summary .total-price span {
+    font-size: 24px;
+    color: #53be31;
+}
+
+#new-order .new-order__summary button.btn {
+    width: 240px;
+    margin-top: 45px;
+}

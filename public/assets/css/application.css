@@ -30,6 +30,14 @@ body {
     height: 0px;
 }
 
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+.mg-none { margin: 0px !important; }
+.mg-t30 { margin-top: 30px !important; }
+.color-green { color: #53be31 !important; }
+
 .title {
     display: block;
     position: relative;

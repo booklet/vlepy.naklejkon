@@ -6,6 +6,13 @@ setlocale(LC_MONETARY, 'pl_PL');
 include 'config/environment.php';
 include 'config/environment/' . Config::get('env') . '.php';
 
+include 'config/secret.php';
+
+// TIME FOR DATABASE
+Config::set('mysqltime', "Y-m-d H:i:s");
+
+Config::set('package_size', 500);
+
 // List of files to minify
 Config::set('css_files', [
     //
@@ -19,6 +26,8 @@ Config::set('css_files', [
     // Assets
     'asset.container.css',
     'asset.flexbox.css',
+    'asset.form.css',
+    'asset.buttons.css',
 
     //
     'application.css',
@@ -33,6 +42,7 @@ Config::set('css_files', [
     'block.insta-gallery.css',
     'block.advanteges.css',
     'block.newsletter.css',
+    'block.order-form.css',
 ]);
 
 Config::set('js_files', [
@@ -46,8 +56,3 @@ Config::set('js_files', [
     //
     'application.js',
 ]);
-
-include 'config/secret.php';
-
-// TIME FOR DATABASE
-Config::set('mysqltime', "Y-m-d H:i:s");
