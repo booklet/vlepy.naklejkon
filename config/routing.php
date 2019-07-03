@@ -12,8 +12,9 @@ $router->setBasePath('');
 
 $router->map('GET','/', 'StaticPagesController#start', 'root_path');
 
-$router->map('POST','/zamowienie', 'OrderController#new', 'order_new');
-$router->map('POST','/orders', 'OrderController#create', 'order_create');
+$router->map('POST','/nowe-zamowienie', 'Order\OrderController#new', 'order_new');
+$router->map('POST','/orders', 'Order\OrderController#create', 'order_create');
+$router->map('GET','/zamowienie', 'Order\OrderController#completed', 'order_completed');
 
 Config::set('router', $router);
 

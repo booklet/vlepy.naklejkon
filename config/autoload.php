@@ -1,6 +1,6 @@
 <?php
 // Autoloader paths
-$autoloader_paths_to_load = [
+$paths = [
     'app/classes',
     'app/classes/minify',
     'app/controllers',
@@ -14,7 +14,9 @@ $autoloader_paths_to_load = [
 ];
 
 // Modules
-$modules = [];
+$modules = [
+    'order'
+];
 
 foreach ($modules as $module) {
     $paths[] = 'app/modules/' . $module . '/classes';
@@ -32,7 +34,7 @@ foreach ($modules as $module) {
 // $paths[] = 'app/modules/allegro/classes/resources';
 
 include 'vendor/boooklet/framework/src/Autoloader.php';
-foreach ($autoloader_paths_to_load as $path) {
+foreach ($paths as $path) {
     $loader = new Autoloader($path);
     spl_autoload_register([$loader, 'autoload']);
 }
