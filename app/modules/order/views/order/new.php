@@ -2,7 +2,40 @@
 
 <form id="order" class="form" action="<?= Routing::path('order_create') ?>" method="POST" enctype="multipart/form-data">
     <div class="container container--540">
-        <div class="title title--underscore">Szczegóły zamówienia</div>
+        <div class="title title--underscore">Wybrane naklejki</div>
+        <div class="order__products">
+            <?php $total_price = 0.00; ?>
+            <?php foreach ($params['products'] as $product): ?>
+                <?php $total_price += $product['total_price']; ?>
+                <div class="product product--<?= $product['uid'] ?>">
+                    <input type="hidden" name="products[<?= $product['uid'] ?>][uid]" value="<?= $product['uid'] ?>" />
+                    <input type="hidden" name="products[<?= $product['uid'] ?>][dimensions]" value="<?= $product['dimensions'] ?>" />
+                    <input type="hidden" name="products[<?= $product['uid'] ?>][quantity]" value="<?= $product['quantity'] ?>" />
+                    <input type="hidden" name="products[<?= $product['uid'] ?>][price]" value="<?= $product['price'] ?>" />
+                    <input type="hidden" name="products[<?= $product['uid'] ?>][total_price]" value="<?= $product['total_price'] ?>" />
+
+                    <div class="product__name"><?= $product['dimensions'] ?></div>
+                    <div class="product__file">
+                        <input id="file-<?= $product['uid'] ?>" type="file" name="projects[<?= $product['uid'] ?>]" accept="application/pdf,image/jpeg,image/png" required />
+                        <label for="file-<?= $product['uid'] ?>">Dodaj plik</label>
+                    </div>
+                    <div class="product__quantity"><?= $product['quantity'] * Config::get('package_size') ?>&nbsp;szt</div>
+                    <div class="product__price"><?= to_pln($product['total_price']) ?></div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="order__shipment">
+            <div class="order__shipment__name">
+                <?= Config::get('shipping_name') ?>
+            </div>
+            <div class="order__shipment__price">
+                <?= to_pln(Config::get('shipping_price')) ?>
+            </div>
+        </div>
+        <div class="order__total-price">
+            Łącznie: <span><?= to_pln($total_price + Config::get('shipping_price')) ?></span>
+        </div>
+        <div class="title title--small title--underscore">Szczegóły zamówienia</div>
         <div class="order__customer">
             <div class="flexbox flexbox--grid">
                 <div class="col col--5">
@@ -54,31 +87,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="title title--small title--underscore">Wybrane naklejki</div>
-        <div class="order__products">
-            <?php $total_price = 0.00; ?>
-            <?php foreach ($params['products'] as $product): ?>
-                <?php $total_price += $product['total_price']; ?>
-                <div class="product product--<?= $product['uid'] ?>">
-                    <input type="hidden" name="products[<?= $product['uid'] ?>][uid]" value="<?= $product['uid'] ?>" />
-                    <input type="hidden" name="products[<?= $product['uid'] ?>][dimensions]" value="<?= $product['dimensions'] ?>" />
-                    <input type="hidden" name="products[<?= $product['uid'] ?>][quantity]" value="<?= $product['quantity'] ?>" />
-                    <input type="hidden" name="products[<?= $product['uid'] ?>][price]" value="<?= $product['price'] ?>" />
-                    <input type="hidden" name="products[<?= $product['uid'] ?>][total_price]" value="<?= $product['total_price'] ?>" />
-
-                    <div class="product__name"><?= $product['dimensions'] ?></div>
-                    <div class="product__file">
-                        <input id="file-<?= $product['uid'] ?>" type="file" name="projects[<?= $product['uid'] ?>]" accept="application/pdf,image/jpeg,image/png" required />
-                        <label for="file-<?= $product['uid'] ?>">Dodaj plik</label>
-                    </div>
-                    <div class="product__quantity"><?= $product['quantity'] * Config::get('package_size') ?>&nbsp;szt</div>
-                    <div class="product__price"><?= to_pln($product['total_price']) ?></div>
-                </div>
-            <?php endforeach; ?>
-        </div>
-        <div class="order__total-price">
-            Łącznie: <span><?= to_pln($total_price) ?></span>
         </div>
         <div class="text-right mg-t30">
             <button class="btn btn--primary" type="submit">

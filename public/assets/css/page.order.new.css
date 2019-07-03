@@ -7,7 +7,8 @@
     padding: 0px;
 }
 
-#order .order__products .product {
+#order .order__products .product,
+#order .order__shipment {
     display: flex;
     background-color: #ffffff;
     align-items: center;
@@ -19,7 +20,8 @@
     border-radius: 5px;
 }
 
-#order .order__products .product .product__name {
+#order .order__products .product .product__name,
+#order .order__shipment .order__shipment__name {
     flex: 1 1 auto;
 }
 
@@ -45,7 +47,8 @@
     padding: 0px 15px;
 }
 
-#order .order__products .product .product__price {
+#order .order__products .product .product__price,
+#order .order__shipment .order__shipment__price {
     flex: 0 0 15%;
     text-align: right;
     color: #53be31;
@@ -61,6 +64,7 @@
     font-family: 'Roboto SemiBold';
     font-size: 18px;
     text-align: right;
+    margin-bottom: 30px;
     padding-right: 10px;
 }
 
