@@ -6,11 +6,6 @@
     </div>
     <div class="footer-content footer-content--dark">
         <div class="container container--1200">
-            <?php include 'app/views/shared/_newsletter.php'; ?>
-        </div>
-    </div>
-    <div class="footer-content footer-content--dark footer-content--border">
-        <div class="container container--1200">
             <div class="flexbox flexbox--grid">
                 <div class="footer__logo col col--18p">
                     <img src="/public/assets/images/naklejkon_logo_white.svg" alt="" />
