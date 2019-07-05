@@ -13,7 +13,7 @@ Config::set('mysqltime', "Y-m-d H:i:s");
 
 Config::set('package_size', 500);
 
-Config::set('shipping_name', 'Kurier UPS');
+Config::set('shipping_name', 'Kurier UPS (pobranie)');
 Config::set('shipping_price', 15.00);
 
 
