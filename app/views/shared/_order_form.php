@@ -23,21 +23,21 @@
                                         <label>Wymiar</label>
                                         <select id="product-dimensions" class="form-control">
                                             <option value="50x50 mm" data-price="33.00" selected>50x50 mm</option>
-                                            <option value="60x60 mm" data-price="36.00" selected>60x60 mm</option>
-                                            <option value="70x70 mm" data-price="45.00" selected>70x70 mm</option>
-                                            <option value="80x80 mm" data-price="64.00" selected>80x80 mm</option>
-                                            <option value="90x90 mm" data-price="64.00" selected>90x90 mm</option>
-                                            <option value="100x100 mm" data-price="76.00" selected>100x100 mm</option>
-                                            <option value="120x120 mm" data-price="138.00" selected>120x120 mm</option>
-                                            <option value="150x150 mm" data-price="138.00" selected>150x150 mm</option>
-                                            <option value="70x50 mm" data-price="38.00" selected>70x50 mm</option>
-                                            <option value="100x50 mm" data-price="45.00" selected>100x50 mm</option>
-                                            <option value="100x70 mm" data-price="56.00" selected>100x70 mm</option>
-                                            <option value="150x50 mm" data-price="62.00" selected>150x50 mm</option>
-                                            <option value="150x70 mm" data-price="76.00" selected>150x70 mm</option>
-                                            <option value="150x100 mm" data-price="97.00" selected>150x100 mm</option>
-                                            <option value="200x100 mm" data-price="138.00" selected>200x100 mm</option>
-                                            <option value="200x150 mm" data-price="199.00" selected>200x150 mm</option>
+                                            <option value="60x60 mm" data-price="36.00">60x60 mm</option>
+                                            <option value="70x70 mm" data-price="45.00">70x70 mm</option>
+                                            <option value="80x80 mm" data-price="64.00">80x80 mm</option>
+                                            <option value="90x90 mm" data-price="64.00">90x90 mm</option>
+                                            <option value="100x100 mm" data-price="76.00">100x100 mm</option>
+                                            <option value="120x120 mm" data-price="138.00">120x120 mm</option>
+                                            <option value="150x150 mm" data-price="138.00">150x150 mm</option>
+                                            <option value="70x50 mm" data-price="38.00">70x50 mm</option>
+                                            <option value="100x50 mm" data-price="45.00">100x50 mm</option>
+                                            <option value="100x70 mm" data-price="56.00">100x70 mm</option>
+                                            <option value="150x50 mm" data-price="62.00">150x50 mm</option>
+                                            <option value="150x70 mm" data-price="76.00">150x70 mm</option>
+                                            <option value="150x100 mm" data-price="97.00">150x100 mm</option>
+                                            <option value="200x100 mm" data-price="138.00">200x100 mm</option>
+                                            <option value="200x150 mm" data-price="199.00">200x150 mm</option>
                                         </select>
                                     </div>
                                 </div>
