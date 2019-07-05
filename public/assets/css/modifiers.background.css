@@ -6,3 +6,15 @@
 .bg-grey  { background-color: #f0f0f0 !important; }
 .bg-gray  { background-color: #f0f0f0 !important; }
 .bg-dark  { background-color: #89898b !important; }
+
+.bg-red      { background-color: #c20018 !important; }
+.bg-green    { background-color: #53be31 !important; }
+.bg-lime     { background-color: #b3ee3a !important; }
+.bg-blue     { background-color: #2196f3 !important; }
+.bg-sky-blue { background-color: #03a9f4 !important; }
+.bg-brown    { background-color: #795548 !important; }
+.bg-purple   { background-color: #673ab7 !important; }
+.bg-pink     { background-color: #f44368 !important; }
+.bg-orange   { background-color: #ff5722 !important; }
+.bg-gold     { background-color: #daa520 !important; }
+.bg-yellow   { background-color: #ffff80 !important; }
