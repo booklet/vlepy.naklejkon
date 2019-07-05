@@ -2,7 +2,7 @@
     <div class="container container--1200">
         <div class="header-wrapper">
             <div class="brand">
-                <a class="brand__logo" href="#">
+                <a class="brand__logo" href="<?= Routing::path('root_path') ?>">
                     <img src="/public/assets/images/naklejkon_logo.svg" alt="" />
                 </a>
                 <div class="brand__text">
@@ -11,7 +11,7 @@
             </div>
             <ul class="navbar navbar--primary">
                 <li>
-                    <a href="#cennik">Cennik vlepek</a>
+                    <a href="<?= Routing::path('root_path') ?>#cennik">Cennik vlepek</a>
                 </li>
                 <li>
                     <a href="#zamow">Zamów</a>
