@@ -8,7 +8,7 @@
                 </div>
                 <div class="bg-grey pd-45">
                     <div class="flexbox flexbox--grid">
-                        <div class="col col--5 col--offset-1">
+                        <div class="col col--35p col--offset-10p">
                             <div class="price-list__title">Kwadratowe</div>
                             <ul class="price-list__prices">
                                 <li class="price">
@@ -117,7 +117,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col col--5">
+                        <div class="col col--35p col--offset-10p">
                             <div class="price-list__title">Prostokątne</div>
                             <ul class="price-list__prices">
                                 <li class="price">
