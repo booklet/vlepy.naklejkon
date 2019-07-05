@@ -1,9 +1,4 @@
 <footer id="footer">
-    <div class="footer-content footer-content--white">
-        <div class="container container--1200">
-            <?php include 'app/views/shared/_advantages.php'; ?>
-        </div>
-    </div>
     <div class="footer-content footer-content--dark">
         <div class="container container--1200">
             <div class="flexbox flexbox--grid">
@@ -11,6 +6,7 @@
                     <img src="/public/assets/images/naklejkon_logo_white.svg" alt="" />
                 </div>
                 <div class="footer__contact col col--38p">
+                    <a class="anchor" name="kontakt"></a>
                     <b>+48 62 307 07 12</b> lub <b>info@naklejkon.pl</b><br />
                     od poniedziałku do piątku w godzinach 7:00 - 16:00
                     <p>

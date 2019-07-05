@@ -51,7 +51,7 @@ class OrderController extends ApplicationController
         } else {
             Alerts::error('Wystąpił błąd podczas składania zamówienia');
         }
-        
+
         Routing::generatePathAndRedirect('root_path');
     }
 }

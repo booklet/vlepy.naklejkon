@@ -38,7 +38,7 @@
     font-family: 'Roboto';
     font-size: 18px;
     color: #282828;
-    padding: 25px 12px 8px 12px;
+    padding: 25px 10px 8px 10px;
     border: 1px solid #c8d3dd;
     border-radius: 5px;
     box-shadow: none;
@@ -83,7 +83,7 @@
 .form .form-group textarea.form-control {
     height: auto;
     min-height: 67px;
-    padding: 28px 14px 10px 14px;
+    padding: 28px 12px 10px 12px;
     resize: vertical;
 }
 
@@ -96,7 +96,7 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    padding: 26px 30px 7px 6px;
+    padding: 26px 30px 7px 10px;
     cursor: pointer;
 }
 
@@ -231,6 +231,8 @@
 }
 
 
+
+
 .form .form-group.radio-select {
     display: block;
     background-color: #ffffff !important;
@@ -293,6 +295,99 @@
     margin: 0px;
     padding: 6px 15px;
 }
+
+
+
+
+
+
+/* Checkbox */
+.form .form-group.form-group--checkbox {
+
+}
+
+.form .form-group.form-group--checkbox input[type=checkbox],
+.form .form-group.form-group--checkbox input[type=radio] {
+    display: none !important;
+}
+
+.form .form-group.form-group--checkbox label {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    line-height: 1.5em;
+    font-family: 'Roboto Light';
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px;
+    padding-top: 1px;
+    padding-left: 40px;
+}
+
+.form .form-group.form-group--checkbox label::before {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    content: '\f00c';
+    color: #ffffff;
+    border: 1px solid #bac8d5;
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.form .form-group.form-group--checkbox input[type=checkbox]:checked + label::before,
+.form .form-group.form-group--checkbox input[type=radio]:checked + label::before {
+    background-color: #107f30;
+    border-color: #107f30;
+}
+
+.form .form-group.form-group--checkbox label a {
+    font-family: 'Roboto';
+    color: #1a9cff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.form .form-group.form-group--checkbox label a:hover {
+    color: #0084e6;
+}
+
+
+
+
+
+.form .form-group.form-group--checkbox label.invalid {
+    display: block;
+	position: static;
+    font-family: 'Roboto';
+    font-size: 13px;
+	color: #d80e24;
+	margin-top: 6px;
+    padding: 0px;
+}
+
+.form .form-group.form-group--checkbox label.invalid::before {
+    display: block;
+    background-color: transparent;
+    position: static;
+    width: auto;
+    height: auto;
+    content: '';
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
 
 
 

@@ -40,6 +40,14 @@ Config::set('css_files', [
     'asset.form.css',
     'asset.buttons.css',
     'asset.alerts.css',
+    'asset.card.css',
+
+    // Modifiers
+    'modifiers.background.css',
+    'modifiers.position.css',
+    'modifiers.text.css',
+    'modifiers.margin.css',
+    'modifiers.padding.css',
 
     //
     'application.css',
@@ -52,6 +60,8 @@ Config::set('css_files', [
     'page.order.new.css',
 
     //
+    'block.intro.css',
+    'block.price_list.css',
     'block.products.css',
     'block.reviews.css',
     'block.insta-gallery.css',

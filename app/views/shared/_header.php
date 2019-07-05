@@ -11,18 +11,18 @@
             </div>
             <ul class="navbar navbar--primary">
                 <li>
-                    <a href="#vlepki">Nasze vlepki</a>
+                    <a href="#cennik">Cennik vlepek</a>
                 </li>
                 <li>
-                    <a href="#galeria">Galeria vlepek</a>
+                    <a href="#zamow">Zamów</a>
                 </li>
                 <li>
-                    <a href="#newsletter">Newsletter</a>
+                    <a href="#galeria">Galeria</a>
                 </li>
             </ul>
             <ul class="navbar navbar--secondary">
                 <li>
-                    <a href="#newsletter">Kontakt</a>
+                    <a href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </div>

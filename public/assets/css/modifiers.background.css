@@ -1,0 +1,8 @@
+/*
+ *    Background modifiers
+ */
+
+.bg-white { background-color: #ffffff !important; }
+.bg-grey  { background-color: #f0f0f0 !important; }
+.bg-gray  { background-color: #f0f0f0 !important; }
+.bg-dark  { background-color: #89898b !important; }

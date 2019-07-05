@@ -1,0 +1,67 @@
+#intro {
+    display: block;
+    width: 100%;
+    font-size: 0px;
+    margin-bottom: 30px;
+}
+
+#intro .intro__banner {
+
+}
+
+#intro .intro__banner img {
+    max-width: 100%;
+}
+
+#intro .intro__advantages {
+    position: relative;
+    margin-top: 30px;
+}
+
+#intro .intro__advantages .advantage {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#intro .intro__advantages .advantage .advantage__icon {
+
+}
+
+#intro .intro__advantages .advantage .advantage__text {
+    font-family: 'Roboto SemiBold';
+    font-size: 24px;
+    font-weight: 300;
+    color: #333333;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    #intro .intro__advantages {
+        height: 192px;
+        margin-top: -96px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #intro .intro__advantages .advantage.advantage--time {
+        padding-right: 30%;
+    }
+
+    #intro .intro__advantages .advantage.advantage--quality {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #intro .intro__advantages .advantage.advantage--shipment {
+        padding-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

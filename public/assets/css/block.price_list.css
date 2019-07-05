@@ -1,0 +1,38 @@
+#price-list {
+
+}
+
+#price-list .price-list__title {
+    font-family: 'Roboto Light';
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+#price-list .price-list__prices {
+    display: block;
+    list-style-type: none;
+    line-height: 1.4em;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #282828;
+    margin: 0px;
+    padding: 0px;
+}
+
+#price-list .price-list__prices .price {
+    padding: 6px 0px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+#price-list .price-list__prices .price:last-child {
+    border-bottom: none;
+}
+
+#price-list .price-list__prices .price span {
+    font-family: 'Roboto SemiBold';
+    float: right;
+}

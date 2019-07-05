@@ -106,6 +106,7 @@
 
             var addProduct = function() {
                 var $product = $('<li class="product"></li>');
+                var $wrapper = $('<div class="flexbox flexbox--grid flexbox--align-center"></div>');
 
                 var uid = generateUID(12);
                 let dimensions = $dimensions_selector.val();
@@ -130,10 +131,12 @@
                 $product.append('<input type="hidden" name="products[' + uid + '][price]" value="' + price + '" />');
                 $product.append('<input type="hidden" name="products[' + uid + '][total_price]" value="' + total_price + '" />');
 
-                $product.append('<div class="product__name">' + dimensions + '</div>');
-                $product.append('<div class="product__quantity">' + (quantity * 500) + ' szt</div>');
-                $product.append('<div class="product__price">' + toPLN(total_price) + '</div>');
-                $product.append('<div class="product__remove"></div>');
+                $wrapper.append('<div class="col col--25p"><div class="product__name">' + dimensions + '</div></div>');
+                $wrapper.append('<div class="col col--25p"><div class="product__quantity">' + (quantity * 500) + ' szt</div></div>');
+                $wrapper.append('<div class="col col--25p"><div class="product__price">' + toPLN(total_price) + '</div></div>');
+                $wrapper.append('<div class="col col--25p text-right"><div class="product__remove"></div></div>');
+
+                $product.append($wrapper);
 
                 $product.on('click', '.product__remove', function() {
                     delete products[uid];
@@ -188,6 +191,13 @@
                 zipCode: true,
                 messages: {
                     zipCode: 'Proszę podać poprawny kod pocztowy'
+                }
+            });
+
+            $('#rules').rules('add', {
+                required: true,
+                messages: {
+                    required: 'Proszę zaakceptować regulamin'
                 }
             });
 

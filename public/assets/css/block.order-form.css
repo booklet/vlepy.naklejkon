@@ -13,32 +13,31 @@
 }
 
 #new-order .new-order__products .product {
-    display: flex;
+    display: block;
     background-color: #ffffff;
-    align-items: center;
     font-family: 'Roboto SemiBold';
     margin-bottom: 15px;
-    padding: 15px 25px;
+    padding: 15px 0px;
     border: 1px solid #c8d3dd;
     border-radius: 5px;
 }
 
 #new-order .new-order__products .product .product__name {
-    flex: 1 1 auto;
+    padding: 0px 12px;
 }
 
 #new-order .new-order__products .product .product__quantity {
-    flex: 0 0 15%;
+    padding: 0px 12px;
 }
 
 #new-order .new-order__products .product .product__price {
-    flex: 0 0 15%;
     color: #53be31;
+    padding: 0px 12px;
 }
 
 #new-order .new-order__products .product .product__remove {
-    flex: 0 0 auto;
     cursor: pointer;
+    margin-right: 15px;
     transition: color 0.2s;
 }
 

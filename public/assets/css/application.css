@@ -13,15 +13,6 @@ body {
     padding: 0px;
 }
 
-#intro {
-    display: block;
-    width: 100%;
-}
-
-#intro img {
-    max-width: 100%;
-}
-
 .anchor {
     display: block;
     position: relative;
@@ -30,18 +21,12 @@ body {
     height: 0px;
 }
 
-.text-left   { text-align: left; }
-.text-center { text-align: center; }
-.text-right  { text-align: right; }
-
-.mg-none { margin: 0px !important; }
-.mg-t30 { margin-top: 30px !important; }
 .color-green { color: #53be31 !important; }
 
 .title {
     display: block;
     position: relative;
-    font-size: 42px;
+    font-size: 40px;
     text-align: center;
     font-weight: 300;
     margin: 0px 0px 20px 0px;
@@ -66,10 +51,4 @@ body {
 .title b {
     font-family: 'Roboto Bold';
     font-weight: 300;
-}
-
-.card {
-    background-color: #ffffff;
-    box-shadow: 0px 2px 5px 0px #cccccc;
-    padding: 10px;
 }
