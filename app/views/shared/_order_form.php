@@ -14,7 +14,7 @@
                         wysłyki.
                     </div>
                 </div>
-                <div class="bg-gray pd-t60 pd-b15">
+                <div class="bg-gray pd-t60 pd-b30">
                     <div class="container container--720">
                         <div class="new-order__add-product">
                             <div class="flexbox flexbox--grid flexbox--justify-center flexbox--align-center">
