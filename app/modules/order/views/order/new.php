@@ -22,7 +22,7 @@
                                     <div class="product__name"><?= $product['dimensions'] ?></div>
                                     <div class="product__file">
                                         <input id="file-<?= $product['uid'] ?>" type="file" name="projects[<?= $product['uid'] ?>]" accept="application/pdf,image/jpeg,image/png" required />
-                                        <label for="file-<?= $product['uid'] ?>">Dodaj plik</label>
+                                        <label class="text-link" for="file-<?= $product['uid'] ?>">Dodaj plik</label>
                                     </div>
                                     <div class="product__quantity"><?= $product['quantity'] * Config::get('package_size') ?>&nbsp;szt</div>
                                     <div class="product__price"><?= to_pln($product['total_price']) ?></div>

@@ -7,6 +7,14 @@
 .text-semibold { font-family: 'Roboto SemiBold' !important; font-weight: 300 !important; }
 .text-bold     { font-family: 'Roboto Bold' !important; font-weight: 300 !important; }
 
+.text-link, a.text-link {
+    color: #1a9cff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.text-link:hover, a.text-link:hover { color: #0084e6; }
+
 
 /* Text align */
 .text-left    { text-align: left !important; }
