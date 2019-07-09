@@ -27,6 +27,7 @@
 
 #order .order__products .product .product__file {
     flex: 0 0 auto;
+    max-width: 200px;
     padding: 0px 15px;
 }
 
@@ -35,7 +36,9 @@
 }
 
 #order .order__products .product .product__file input[type=file] + label {
-
+    display: block;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 
 #order .order__products .product .product__file input[type=file]:invalid + label {
