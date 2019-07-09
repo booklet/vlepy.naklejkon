@@ -14,6 +14,7 @@ class OrderMailer extends AppMailer
             'customer_first_name' => $order['customer_first_name'],
             'customer_last_name' => $order['customer_last_name'],
             'customer_email' => $order['customer_email'],
+            'customer_phone_number' => $order['customer_phone_number'],
             'street' => $order['street'],
             'house_number' => $order['house_number'],
             'zip_code' => $order['zip_code'],
