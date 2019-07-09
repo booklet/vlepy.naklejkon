@@ -1,4 +1,4 @@
-<form id="new-order" class="form" action="<?= Routing::path('order_new') ?>" method="POST">
+<form id="new-order" class="form" action="<?= Routing::path('order_new') ?>#vlepki" method="POST">
     <a class="anchor" name="zamow"></a>
     <div class="container container--1200">
         <?php Alerts::display(); ?>

@@ -1,6 +1,7 @@
 <?php include 'app/views/shared/_intro.php'; ?>
 
 <form id="order" class="form" action="<?= Routing::path('order_create') ?>" method="POST" enctype="multipart/form-data">
+    <a class="anchor" name="vlepki"></a>
     <div class="container container--1200">
         <div class="card">
             <div class="card-body">
