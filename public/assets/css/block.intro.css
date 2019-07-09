@@ -1,16 +1,23 @@
 #intro {
     display: block;
+    position: relative;
     width: 100%;
     font-size: 0px;
     margin-bottom: 30px;
 }
 
 #intro .intro__banner {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    overflow: hidden;
 }
 
 #intro .intro__banner img {
-    max-width: 100%;
+    display: block;
+    flex: 0 0 auto;
+    height: 320px;
 }
 
 #intro .intro__advantages {
@@ -20,8 +27,7 @@
 
 #intro .intro__advantages .advantage {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 30px;
 }
 
 #intro .intro__advantages .advantage .advantage__icon {
@@ -30,11 +36,23 @@
 
 #intro .intro__advantages .advantage .advantage__text {
     font-family: 'Roboto SemiBold';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: #333333;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 6px 0px;
+}
+
+#intro .intro__alerts {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 710px;
+    max-height: 152px;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
 }
 
 @media only screen and (min-width: 576px) {
@@ -43,12 +61,35 @@
 
 @media only screen and (min-width: 768px) {
     #intro .intro__advantages {
-        height: 204px;
-        margin-top: -102px;
+        height: 168px;
+        margin-top: -84px;
+    }
+
+    #intro .intro__advantages .advantage {
+        margin-top: 0px;
+    }
+
+    #intro .intro__alerts {
+        top: calc(50% - 84px);
     }
 }
 
 @media only screen and (min-width: 992px) {
+    #intro .intro__banner,
+    #intro .intro__banner img {
+        height: 390px;
+    }
+
+    #intro .intro__advantages {
+        height: 194px;
+        margin-top: -97px;
+    }
+
+    #intro .intro__advantages .advantage {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     #intro .intro__advantages .advantage.advantage--quality {
         padding-right: 30%;
     }
@@ -61,8 +102,33 @@
     #intro .intro__advantages .advantage.advantage--shipment {
         padding-left: 30%;
     }
+
+    #intro .intro__advantages .advantage .advantage__text {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #intro .intro__alerts {
+        top: calc(50% - 97px);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    #intro .intro__banner,
+    #intro .intro__banner img {
+        height: 460px;
+    }
 
+    #intro .intro__advantages {
+        height: 204px;
+        margin-top: -102px;
+    }
+
+    #intro .intro__advantages .advantage .advantage__text {
+        font-size: 24px;
+    }
+
+    #intro .intro__alerts {
+        top: calc(50% - 102px);
+    }
 }

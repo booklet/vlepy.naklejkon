@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="flexbox flexbox--grid">
-                        <div class="col col--4">
+                        <div class="col col--12 col--md-4">
                             <div class="advantage advantage--quality">
                                 <div class="advantage__icon">
                                     <img src="/public/assets/images/icons/footer_01.png" alt="" />
@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col--4">
+                        <div class="col col--12 col--md-4">
                             <div class="advantage advantage--time">
                                 <div class="advantage__icon">
                                     <img src="/public/assets/images/icons/footer_03.png" alt="" />
@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col--4">
+                        <div class="col col--12 col--md-4">
                             <div class="advantage advantage--shipment">
                                 <div class="advantage__icon">
                                     <img src="/public/assets/images/icons/footer_04.png" alt="" />
@@ -41,5 +41,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="intro__alerts">
+        <?php Alerts::display([ 'module' => 'order' ]) ?>
     </div>
 </div>

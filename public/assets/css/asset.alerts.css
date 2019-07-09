@@ -7,8 +7,8 @@
     color: #818181;
     margin-bottom: 15px;
     padding: 25px;
-    border: 2px solid #cecece;
-    border-radius: 10px;
+    border: 15px solid #cecece;
+    border-radius: 0px;
 }
 
 .alert.alert--info {
@@ -27,4 +27,38 @@
     background-color: #ffe6e6;
     color: #d80e24;
     border-color: #ff8080;
+}
+
+
+
+/*
+ *
+ */
+
+#alerts.alerts--order .alert {
+    background-color: rgba(243, 241, 242, 0.95);
+    font-size: 26px;
+    text-align: center;
+    color: #818181;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: rgba(206, 206, 206, 0.4);
+}
+
+#alerts.alerts--order .alert.alert--info {
+    background-color: rgba(230, 242, 255, 0.95);
+    color: #3399ff;
+    border-color: rgba(153, 204, 255, 0.4);
+}
+
+#alerts.alerts--order .alert.alert--success {
+    background-color: rgba(248, 251, 239, 0.95);
+    color: #53be31;
+    border-color: rgba(172, 208, 55, 0.4);
+}
+
+#alerts.alerts--order .alert.alert--error {
+    background-color: rgba(255, 230, 230, 0.95);
+    color: #d80e24;
+    border-color: rgba(255, 128, 128, 0.4);
 }
