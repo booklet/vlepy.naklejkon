@@ -7,6 +7,7 @@
         <meta content="noydir" name="robots">
         <title>Vlepy.pl</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <?php include 'app/views/shared/_google_tag_manager.php' ?>
 
         <!-- CSS -->
         <?= ApplicationHelper::minifyCss() ?>
@@ -16,6 +17,7 @@
 
     </head>
     <body data-env="<?= Config::get('env') ?>">
+        <?php include 'app/views/shared/_google_tag_manager_noscript.php' ?>
         <?php include 'app/views/shared/_header.php'; ?>
         <div id="content">
             <?php include ($path) ? $path : 'app/views/shared/404.php' ?>
