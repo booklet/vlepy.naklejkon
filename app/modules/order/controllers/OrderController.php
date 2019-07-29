@@ -25,6 +25,8 @@ class OrderController extends ApplicationController
         $products = $this->params['products'];
         $files = ArrayUntils::normalizeFilesArray($_FILES)['projects'];
 
+        $order['total_price'] = 0.00;
+
         foreach ($products as $product) {
             $uid = $product['uid'];
             $file = $files[$uid];
@@ -42,6 +44,8 @@ class OrderController extends ApplicationController
             $files[$uid]['name'] = $filename;
 
             $products[$uid]['file'] = $files[$uid];
+
+            $order['total_price'] += $product['total_price'];
         }
 
         $mailer = new OrderMailer();

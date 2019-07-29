@@ -19,6 +19,7 @@ class OrderMailer extends AppMailer
             'house_number' => $order['house_number'],
             'zip_code' => $order['zip_code'],
             'city' => $order['city'],
+            'total_price' => $order['total_price'],
             'products' => $products,
         ]);
 
