@@ -25,7 +25,7 @@ class OrderController extends ApplicationController
         $products = $this->params['products'];
         $files = ArrayUntils::normalizeFilesArray($_FILES)['projects'];
 
-        $order['total_price'] = 0.00;
+        $order['total_price'] = Config::get('shipping_price');
 
         foreach ($products as $product) {
             $uid = $product['uid'];

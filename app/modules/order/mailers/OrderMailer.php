@@ -23,7 +23,9 @@ class OrderMailer extends AppMailer
             'products' => $products,
         ]);
 
-        $this->send($subject, $recipients, $body, $files, $order['customer_email']);
+        echo $body;
+
+        // $this->send($subject, $recipients, $body, $files, $order['customer_email']);
 
         return $this;
     }
