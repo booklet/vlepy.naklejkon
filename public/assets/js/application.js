@@ -167,38 +167,47 @@
 
         $('#order').elemExists(function() {
             var $self = this;
+            var $products_list = $('#order .order__products');
             var $submit_btn = $('#order button[type=submit]');
 
             $.validator.setDefaults({ ignore: [] });
 
             $self.validate({
+                groups: { username: 'product__file__input' },
                 lang: 'pl',
                 validClass: 'valid',
                 errorClass: 'invalid',
                 errorPlacement: function(er, el) {
-                    el.closest('.form-group').append(er);
+                    if (el.hasClass('product__file__input')) {
+                        $([document.documentElement, document.body]).animate({ scrollTop: $products_list.offset().top - 100 }, 0);
+
+                        el.on('change', function() { er.remove(); }).closest('.product__file').append(er);
+                    } else {
+                        el.closest('.form-group').append(er);
+                    }
                 },
+            });
+
+            $('#order .order__products .product .product__file__input').each(function(i, el) {
+                $(el).rules('add', {
+                    required: true,
+                    messages: { required: 'Załącz projekt do druku.' }
+                });
             });
 
             $('#order .order__phone-number').rules('add', {
                 phoneNumber: true,
-                messages: {
-                    phoneNumber: 'Proszę wpisywać poprawny numer telefonu.'
-                }
+                messages: { phoneNumber: 'Proszę wpisywać poprawny numer telefonu.' }
             });
 
             $('#order .order__zip-code').rules('add', {
                 zipCode: true,
-                messages: {
-                    zipCode: 'Proszę podać poprawny kod pocztowy'
-                }
+                messages: { zipCode: 'Proszę podać poprawny kod pocztowy' }
             });
 
             $('#rules').rules('add', {
                 required: true,
-                messages: {
-                    required: 'Proszę zaakceptować regulamin'
-                }
+                messages: { required: 'Proszę zaakceptować regulamin' }
             });
 
             $('#order .product input[type=file]').on('change', function() {

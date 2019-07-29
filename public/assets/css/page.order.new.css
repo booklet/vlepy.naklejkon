@@ -45,6 +45,12 @@
     color: #d80e24;
 }
 
+#order .order__products .product .product__file label.invalid {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 #order .order__products .product .product__quantity {
     flex: 0 0 15%;
     padding: 0px 15px;
