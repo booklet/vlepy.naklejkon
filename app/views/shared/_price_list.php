@@ -1,7 +1,7 @@
 <div id="price-list">
     <a class="anchor" name="cennik"></a>
     <div class="container container--1200">
-        <div class="card">
+        <div class="card bg-white-op">
             <div class="card-body pd-b15">
                 <div class="title mg-b25 pd-0">
                     Cennik vlepek

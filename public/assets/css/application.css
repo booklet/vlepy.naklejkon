@@ -52,3 +52,17 @@ body {
     font-family: 'Roboto Bold';
     font-weight: 300;
 }
+
+
+
+#home {
+    background-image: url(/public/assets/images/Vlepy_BG_01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    #home {
+        padding: 120px 0px;
+    }
+}

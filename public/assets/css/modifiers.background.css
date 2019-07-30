@@ -3,8 +3,8 @@
  */
 
 .bg-white { background-color: #ffffff !important; }
-.bg-grey  { background-color: #f0f0f0 !important; }
-.bg-gray  { background-color: #f0f0f0 !important; }
+.bg-grey  { background-color: #e0e0e0 !important; }
+.bg-gray  { background-color: #e0e0e0 !important; }
 .bg-dark  { background-color: #89898b !important; }
 
 .bg-red      { background-color: #c20018 !important; }
@@ -18,3 +18,5 @@
 .bg-orange   { background-color: #ff5722 !important; }
 .bg-gold     { background-color: #daa520 !important; }
 .bg-yellow   { background-color: #ffff80 !important; }
+
+.bg-white-op { background-color: rgba(255, 255, 255, 0.85) !important; }
