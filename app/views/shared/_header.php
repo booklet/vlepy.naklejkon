@@ -3,7 +3,7 @@
         <div class="header-wrapper">
             <div class="brand">
                 <a class="brand__logo" href="<?= Routing::path('root_path') ?>">
-                    <img src="/public/assets/images/naklejkon_logo.svg" alt="" />
+                    <img src="/public/assets/images/logos/Vlepy_PL_logo.svg" alt="" />
                 </a>
                 <div class="brand__text">
                     Producent vlepek
