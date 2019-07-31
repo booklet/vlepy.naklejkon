@@ -6,6 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="title">Wybrane naklejki</div>
+                <div class="order__products-alerts"></div>
                 <div class="bg-gray pd-t60 pd-b30">
                     <div class="container container--540">
                         <div class="order__products">

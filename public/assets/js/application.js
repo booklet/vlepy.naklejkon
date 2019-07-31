@@ -179,9 +179,13 @@
                 errorClass: 'invalid',
                 errorPlacement: function(er, el) {
                     if (el.hasClass('product__file__input')) {
-                        $([document.documentElement, document.body]).animate({ scrollTop: $products_list.offset().top - 100 }, 0);
+                        var $missing_files_alert = $('<div class="alert alert--error text-center">Dodaj projekty do wybranych produktów</div>');
 
-                        el.on('change', function() { er.remove(); }).closest('.product__file').append(er);
+                        $self.find('.order__products-alerts').empty().append($missing_files_alert);
+
+                        $([document.documentElement, document.body]).animate({ scrollTop: $missing_files_alert.offset().top - 100 }, 0);
+
+                        el.on('change', function() { $self.find('.order__products-alerts').empty() });
                     } else {
                         el.closest('.form-group').append(er);
                     }
