@@ -10,11 +10,11 @@ $router->setBasePath('');
 // $router->map('POST','/clients', 'ClientsController#create', 'create_client_path');
 // $router->map('PUT','/clients/[i:id]', 'ClientsController#update', 'update_client_path');
 
-$router->map('GET','/', 'StaticPagesController#start', 'root_path');
+$router->map('GET', '/', 'StaticPagesController#start', 'root_path');
 
-$router->map('POST','/nowe-zamowienie', 'Order\OrderController#new', 'order_new');
-$router->map('POST','/orders', 'Order\OrderController#create', 'order_create');
-$router->map('GET','/zamowienie', 'Order\OrderController#completed', 'order_completed');
+$router->map('POST', '/nowe-zamowienie', 'Order\OrderController#new', 'order_new');
+$router->map('POST', '/orders', 'Order\OrderController#create', 'order_create');
+$router->map('GET', '/zamowienie', 'Order\OrderController#completed', 'order_completed');
 
 Config::set('router', $router);
 

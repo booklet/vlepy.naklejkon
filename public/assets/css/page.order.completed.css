@@ -1,0 +1,17 @@
+#order-completed {
+    padding: 60px 0px;
+}
+
+@media only screen and (min-width: 576px) {
+    #order-completed {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #order-completed {
+        display: flex;
+        align-items: center;
+        min-height: 65vh;
+    }
+}

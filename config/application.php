@@ -58,6 +58,7 @@ Config::set('css_files', [
 
     // Pages
     'page.order.new.css',
+    'page.order.completed.css',
 
     //
     'block.intro.css',

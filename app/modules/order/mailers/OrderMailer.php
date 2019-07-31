@@ -8,7 +8,7 @@ class OrderMailer extends AppMailer
 {
     public function newOrder($order, $products, $files)
     {
-        $subject = 'Nowe zamówienie ze strony vlepy.naklejkon.pl';
+        $subject = 'Nowe zamówienie ze strony vlepy.pl';
         $recipients = Config::get('mailing_address');
         $body = $this->renderBody(__CLASS__ . '#' . __FUNCTION__, [
             'customer_first_name' => $order['customer_first_name'],
@@ -23,9 +23,7 @@ class OrderMailer extends AppMailer
             'products' => $products,
         ]);
 
-        echo $body;
-
-        // $this->send($subject, $recipients, $body, $files, $order['customer_email']);
+        $this->send($subject, $recipients, $body, $files, $order['customer_email']);
 
         return $this;
     }

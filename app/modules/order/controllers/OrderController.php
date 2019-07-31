@@ -51,11 +51,15 @@ class OrderController extends ApplicationController
         $mailer = new OrderMailer();
 
         if ($mailer->newOrder($order, $products, $files)) {
-            Alerts::success('Dziękujemy za złożenie zamówienia', [ 'module' => 'order' ]);
-        } else {
-            Alerts::error('Wystąpił błąd podczas składania zamówienia', [ 'module' => 'order' ]);
+            Routing::generatePathAndRedirect('order_completed');
         }
 
+        Alerts::error('Wystąpił błąd podczas składania zamówienia', [ 'module' => 'order' ]);
         Routing::generatePathAndRedirect('root_path');
+    }
+
+    public function completed()
+    {
+        return $this->render();
     }
 }
