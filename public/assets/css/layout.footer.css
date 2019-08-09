@@ -99,7 +99,9 @@
 #footer .footer__copyright {
     font-size: 12px;
     line-height: 1.4em;
-    text-align: right;
+    text-align: left;
     margin-top: 20px;
+    margin-left: 18%;
+    padding-left: 27px;
     padding-bottom: 10px;
 }
